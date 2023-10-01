@@ -5,36 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Age-calculator</title>
     <link rel="icon" href="image/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&family=Karla:ital@1&family=Kumbh+Sans&family=Overpass&family=Poppins:wght@500&family=Raleway&family=Roboto+Serif:ital,opsz,wght@0,8..144,300;1,8..144,200;1,8..144,300&family=Space+Mono&display=swap" rel="stylesheet">
     
 </head>
 <body>
     <main>
         <div class="main-cont">
-            <div class="">
-              <div>
+            <div class="birth">
+              <div class="single-input">
                 <label for="">DAY</label>
-                <input type="text" placeholder="DD">
+                <input type="number" placeholder="DD" id="inp">
+                <div class="error"><p>Must be a valid date</p></div>
               </div>
-              <div>
+              <div class="single-input">
                 <label for="">MONTH</label>
-                <input type="text" name="" id="" placeholder="MM">
+                <input type="number" name="" id="inp" placeholder="MM">
+                <div class="error"><p>Must be a valid month</p></div>
               </div>
-              <div>
+              <div class="single-input">
                 <label for="">YEAR</label>
-                <input type="text" placeholder="YY">
+                <input type="number" placeholder="YY" id="inp">
+                <div class="error">Must be in the past</div>
               </div>
             </div>
 
-            <div>
-               <button>
-                <img src="image/icon-arrow.svg" alt="">
-               </button>
+            <div class="btn">
+                <div class="line">   
+                </div>
+                <div class="sub">
+                    <button>
+                        <img src="image/icon-arrow.svg" alt="">
+                    </button>
+                </div>
+               
             </div>
 
-            <div>
-                <span>- - years</span><br>
-                <span>- - months</span><br>
-                <span>- - days</span>
+            <div class="results">
+                <div>
+                    <span>--</span> years<br>
+
+                </div>
+                <div>
+                    <span>--</span> months<br>
+
+                </div>
+                <div>
+                    <span>--</span> days<br>
+
+                </div>
+                
             </div>
 
         </div>
